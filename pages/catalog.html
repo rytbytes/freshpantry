@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshPantry | Catalog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <a href="../index.html" class="logo"><span>🌿</span> FreshPantry</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../pages/catalog.html">Catalog</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button id="theme-btn" class="icon-btn" title="Toggle Theme">🌙</button>
+                <nav class="nav-links">
+                    <a href="../pages/login.html" class="btn-secondary btn-small">Login</a>
+                    <a href="../pages/register.html" class="btn-primary btn-small">Register</a>
+                </nav>
+                <button id="cart-btn" class="icon-btn" title="View Cart">🛒<span id="cart-badge" class="cart-badge">0</span></button>
+            </div>
+        </div>
+    </header>
+    <dialog id="cart-modal">
+        <div class="dialog-header">
+            <h3 class="dialog-title">Your Shopping Cart</h3>
+            <form method="dialog"><button class="icon-btn" aria-label="Close cart">&times;</button></form>
+        </div>
+        <div class="dialog-body" id="cart-items-container">
+            <p class="cart-empty">Your cart is empty.</p>
+        </div>
+        <div class="dialog-footer">
+            <form method="dialog">
+                <button class="btn-secondary keep-shopping">Keep Shopping</button>
+                <button type="button" class="btn-accent checkout-btn">Checkout</button>
+            </form>
+        </div>
+    </dialog>
+
+    <main>
+        <div class="page-view container active">
+            <h2 class="page-title">Fresh Arrivals</h2>
+            <div class="catalog-grid">
+                <article class="product-card">
+                    <img src="https://placehold.co/400x300/4b6b50/ffffff?text=Organic+Avocados" alt="Organic Hass Avocados">
+                    <div class="product-info"><h3 class="product-title">Organic Hass Avocados</h3><p class="product-price">$5.99 / lb</p><button class="btn btn-primary add-to-cart" data-id="p1" data-name="Organic Avocados" data-price="5.99">Add to Cart</button></div>
+                </article>
+                <article class="product-card">
+                    <img src="https://placehold.co/400x300/8b5e34/ffffff?text=Roasted+Almonds" alt="Premium Roasted Almonds">
+                    <div class="product-info"><h3 class="product-title">Premium Roasted Almonds</h3><p class="product-price">$12.50 / 500g</p><button class="btn btn-primary add-to-cart" data-id="p2" data-name="Roasted Almonds" data-price="12.50">Add to Cart</button></div>
+                </article>
+                <article class="product-card">
+                    <img src="https://placehold.co/400x300/e2c2a4/2e3b32?text=Quinoa+Grain" alt="White Quinoa Grain">
+                    <div class="product-info"><h3 class="product-title">White Quinoa Grain</h3><p class="product-price">$7.20 / 1kg</p><button class="btn btn-primary add-to-cart" data-id="p3" data-name="White Quinoa" data-price="7.20">Add to Cart</button></div>
+                </article>
+                <article class="product-card">
+                    <img src="https://placehold.co/400x300/638f69/ffffff?text=Farm+Spinach" alt="Fresh Farm Spinach">
+                    <div class="product-info"><h3 class="product-title">Fresh Farm Spinach</h3><p class="product-price">$3.49 / Bunch</p><button class="btn btn-primary add-to-cart" data-id="p4" data-name="Fresh Spinach" data-price="3.49">Add to Cart</button></div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+<script src="../js/app.js"></script>
+</body>
+</html>
